@@ -56,7 +56,7 @@ class Controller extends System {
     public function view($render = null) {
 
     	$this->title = is_null($this->title) ? 'New Tiulo' : $this->title;
-    	$this->title = is_null($this->description) ? 'Minha descrição' : $this->description;
+    	$this->description = is_null($this->description) ? 'Minha descrição' : $this->description;
     	$this->keywords = is_null($this->keywords) ? 'Minha palavra chave' : $this->keywords;
 
     	$this->setPath($render);
