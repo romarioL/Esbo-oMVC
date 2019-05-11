@@ -140,7 +140,7 @@ class System extends Router{
 
 		$act = $this->action;
 
-		$this->runController->act();
+		$this->runController->$act();
 
 	}
 
