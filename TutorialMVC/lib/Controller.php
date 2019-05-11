@@ -74,7 +74,7 @@ class Controller extends System {
 
     }
 
-    public function render($title = null) {
+    public function render($file= null) {
     	if(is_array($this->dados) && count($this->dados) > 0) {
     		extract($this->dados, EXTR_PREFIX_ALL, 'view');
     		extract(array('controller' => (is_null($this->captionController) ? '' : $this->captionController), 
