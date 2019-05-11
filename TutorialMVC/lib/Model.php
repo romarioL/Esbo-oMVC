@@ -40,7 +40,7 @@ class Model extends Config {
 	public function insert($obj, $table) {
 
 		try {
-			$sql = "INSERT INTO {$table} (".  implode( . "  " . array_keys($array),  $obj).") VALUES ();"
+			$sql = "INSERT INTO {$table} (".  implode( . " , " . , array_keys(array) $obj).") VALUES (" ' .  implode()");" '
 		}
 
 
